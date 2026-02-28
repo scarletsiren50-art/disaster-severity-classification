@@ -1,0 +1,6 @@
+Model,Validation Accuracy
+Logistic Regression,0.4875
+SVM,0.5917
+Random Forest,0.6333
+CNN (Optimized),0.5125
+ResNet50 (Frozen),0.5583

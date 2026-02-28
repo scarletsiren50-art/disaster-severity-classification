@@ -1,0 +1,7 @@
+data/raw/
+data/processed/
+splits/
+models_saved/
+__pycache__/
+*.h5
+*.keras
