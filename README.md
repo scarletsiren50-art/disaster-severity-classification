@@ -34,6 +34,10 @@ Official Source: https://xview2.org/dataset
 
 Total samples used: **1200**
 
+### Note:
+
+The xView2 dataset is publicly available for research use and is governed by its original licensing terms.
+
 ------------------------------------------------------------------------
 
 ## 🧠 Models Implemented
@@ -95,7 +99,6 @@ This figure presents the overall accuracy comparison across all implemented mode
 
 This comparison highlights the performance differences between Logistic Regression, SVM, and Random Forest. Tree-based methods exhibited stronger class discrimination capability compared to linear models.
 
-The detailed visualization illustrates precision, recall, and F1-score variations across classes, emphasizing Random Forest's balanced multi-class classification performance.
 
 ---
 
@@ -162,6 +165,7 @@ This structured file provides detailed quantitative comparison across all implem
 
 ### Install Dependencies
 
+```bash
 pip install -r requirements.txt
 
 ### Run Baseline ML Models
@@ -179,17 +183,26 @@ python main_week8.py
 ### Generate Final Comparison Graph
 
 python final_comparison.py
-
+```
 ------------------------------------------------------------------------
 
 ## 👩‍💻 Author
+### BTech Special Project - DSAI - 3rd year
 
-Md. Sadiya Tabassum\
-BTech Special Project\
-Comparative Analysis of ML Models for Disaster Severity Classification
+Student Name: Md. Sadiya Tabassum\
+
+Roll Number: 23STUCHH010302\
+
+Project Title: Comparative Analysis of Machine Learning Models for Disaster Severity Classification\
+
+Guide Name: Dr. TLS Ramakrishna Sir\
 
 ------------------------------------------------------------------------
 
 ## 📜 License
 
-This project is for academic research purposes.
+This repository is intended for academic and research use only.
+
+The source code developed in this project may be used for educational and non-commercial research purposes.
+
+The dataset used in this study (xView2 Disaster Damage Assessment Dataset) is subject to its original licensing terms and is not redistributed in this repository. Users must download the dataset directly from the official source: https://xview2.org/dataset
