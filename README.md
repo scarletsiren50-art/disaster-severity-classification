@@ -65,46 +65,100 @@ Total samples used: **1200**
 
 ------------------------------------------------------------------------
 
-## 📊 Results
+## 📋 Performance Summary Table
 
-### 🔹 Final Model Comparison
-
-![Final Comparison](results/graphs/final_model_comparison.png)
-
-Random Forest achieved the highest validation accuracy (63.33%),
-outperforming CNN and ResNet50 under moderate dataset size.
-
-------------------------------------------------------------------------
-
-### 🔹 Random Forest Confusion Matrix
-
-![Random Forest CM](results/graphs/random_forest_confusion_matrix.png)
-
-Strong diagonal dominance indicates stable per-class prediction
-performance.
+| Model | Logistic Regression | Support Vector Machine (SVM) | Random Forest | Convolutional Neural Network (CNN) | ResNet50 (Transfer Learning) |
+|-------|---------------------|------------------------------|---------------|------------------------------------|-------------------------------|
+| **Feature Representation** | Flattened pixel vectors | Flattened pixel vectors | Flattened pixel vectors | Raw image tensors | Pretrained deep features |
+| **Learning Type** | Linear classifier | Nonlinear classifier | Ensemble decision trees | Deep learning | Deep residual network |
+| **Validation Accuracy** | 48.75% | 59.17% | 63.33% | 51.25% | 55.83% |
+| **Strengths** | Simple, interpretable, fast training | Better nonlinear separation, stable | Robust, handles nonlinear interaction, resistant to overfitting | Automatic spatial feature learning | Strong hierarchical representation learning |
+| **Weaknesses** | Cannot model nonlinear spatial patterns | Sensitive to parameter tuning | Less interpretable as ensemble grows | Overfitting under limited data | Data-hungry; overfitting observed |
+| **Computational Complexity** | Very low | Moderate | Moderate | High | Very high |
+| **Generalization Behavior** | Poor | Moderate | High | Moderate | Moderate |
 
 ------------------------------------------------------------------------
 
-### 🔹 ResNet50 Confusion Matrix
+## 📊 Experimental Results
+
+### 🔹 1. Final Model Accuracy Comparison
+
+![Final Model Comparison](results/graphs/final_model_comparison.png)
+
+This figure presents the overall accuracy comparison across all implemented models. Random Forest achieved the highest classical ML performance, while deep learning models demonstrated competitive but dataset-sensitive behavior.
+
+---
+
+### 🔹 2. Week 5 – Classical ML Comparison
+
+![Week 5 Comparison](results/graphs/week5_comparison.png)
+
+This comparison highlights the performance differences between Logistic Regression, SVM, and Random Forest. Tree-based methods exhibited stronger class discrimination capability compared to linear models.
+
+![Week 5 Detailed Plot](results/graphs/week5_plot.png)
+
+The detailed visualization illustrates precision, recall, and F1-score variations across classes, emphasizing Random Forest's balanced multi-class classification performance.
+
+---
+
+### 🔹 3. Logistic Regression Confusion Matrix
+
+![Logistic Regression CM](results/graphs/Logistic%20Regression_confusion_matrix.png)
+
+The confusion matrix reveals moderate classification capability, with noticeable misclassification between minor and major damage classes due to linear decision boundaries.
+
+---
+
+### 🔹 4. Support Vector Machine Confusion Matrix
+
+![SVM CM](results/graphs/SVM_confusion_matrix.png)
+
+SVM demonstrates improved separation between structural damage levels compared to Logistic Regression, particularly in identifying minor and major damage categories.
+
+---
+
+### 🔹 5. Random Forest Confusion Matrix
+
+![Random Forest CM](results/graphs/Random%20Forest_confusion_matrix.png)
+
+Random Forest shows strong diagonal dominance, indicating robust multi-class performance and superior feature representation for structured damage classification.
+
+---
+
+### 🔹 6. Convolutional Neural Network (CNN) Accuracy Curve
+
+![CNN Accuracy](results/graphs/week6_cnn_accuracy.png)
+
+The CNN training curve demonstrates gradual convergence with moderate validation accuracy. Slight divergence between training and validation suggests mild overfitting under limited dataset conditions.
+
+---
+
+### 🔹 7. ResNet50 Accuracy Curve
+
+![ResNet Accuracy](results/graphs/week8_resnet_accuracy.png)
+
+The transfer learning-based ResNet50 model shows rapid training convergence, though validation accuracy stabilizes at moderate levels, reflecting dataset size constraints and domain-specific complexity.
+
+---
+
+### 🔹 8. ResNet50 Confusion Matrix
 
 ![ResNet CM](results/graphs/resnet_confusion_matrix.png)
 
-Inter-class confusion observed between minor_damage and major_damage,
-indicating dataset-scale limitations for deep transfer learning.
+The confusion matrix indicates deep feature extraction capability but also highlights inter-class ambiguity between damage severity levels, suggesting potential improvement through larger datasets and fine-tuning.
+
+---
+
+## 📈 Numerical Results (CSV File)
+
+The complete evaluation metrics (accuracy, precision, recall, F1-score) are stored in:
+
+📄 **[Download Final Model Comparison CSV](results/final_model_comparison.csv)**
+
+This structured file provides detailed quantitative comparison across all implemented models and supports reproducibility of experimental findings.
 
 ------------------------------------------------------------------------
 
-## 📈 Validation Accuracy Summary
-
-  Model                 Validation Accuracy
-  --------------------- ---------------------
-  Logistic Regression   48.75%
-  SVM                   59.17%
-  Random Forest         **63.33%**
-  CNN                   51.25%
-  ResNet50              55.83%
-
-------------------------------------------------------------------------
 
 ## 🚀 How to Run
 
