@@ -95,8 +95,6 @@ This figure presents the overall accuracy comparison across all implemented mode
 
 This comparison highlights the performance differences between Logistic Regression, SVM, and Random Forest. Tree-based methods exhibited stronger class discrimination capability compared to linear models.
 
-![Week 5 Detailed Plot](results/graphs/week5_plot.png)
-
 The detailed visualization illustrates precision, recall, and F1-score variations across classes, emphasizing Random Forest's balanced multi-class classification performance.
 
 ---
@@ -153,7 +151,7 @@ The confusion matrix indicates deep feature extraction capability but also highl
 
 The complete evaluation metrics (accuracy, precision, recall, F1-score) are stored in:
 
-📄 **[Download Final Model Comparison CSV](results/final_model_comparison.csv)**
+📄 **[Download Final Model Comparison CSV](reports/final_model_comparison.csv)**
 
 This structured file provides detailed quantitative comparison across all implemented models and supports reproducibility of experimental findings.
 
