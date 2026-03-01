@@ -189,13 +189,13 @@ python final_comparison.py
 ## 👩‍💻 Author
 ### BTech Special Project - DSAI - 3rd year
 
-Student Name: Md. Sadiya Tabassum\
+**Student Name:** Md. Sadiya Tabassum
 
-Roll Number: 23STUCHH010302\
+**Roll Number:** 23STUCHH010302
 
-Project Title: Comparative Analysis of Machine Learning Models for Disaster Severity Classification\
+**Project Title:** Comparative Analysis of Machine Learning Models for Disaster Severity Classification
 
-Guide Name: Dr. TLS Ramakrishna Sir\
+**Guide Name:** Dr. TLS Ramakrishna Sir
 
 ------------------------------------------------------------------------
 
