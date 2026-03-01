@@ -151,7 +151,7 @@ The confusion matrix indicates deep feature extraction capability but also highl
 
 The complete evaluation metrics (accuracy, precision, recall, F1-score) are stored in:
 
-📄 **[Download Final Model Comparison CSV](reports/final_model_comparison.csv)**
+📄 **[Download Final Model Comparison CSV](results/reports/final_model_comparison.csv)**
 
 This structured file provides detailed quantitative comparison across all implemented models and supports reproducibility of experimental findings.
 
