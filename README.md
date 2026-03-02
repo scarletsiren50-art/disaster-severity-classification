@@ -159,6 +159,21 @@ The complete evaluation metrics (accuracy, precision, recall, F1-score) are stor
 This structured file provides detailed quantitative comparison across all implemented models and supports reproducibility of experimental findings.
 
 ------------------------------------------------------------------------
+## ⏱️ Runtime Comparison (CPU-Based Training)
+
+| **Model Category** | **Training Time (seconds)** |
+| -------------- | ----------------------- |
+| Classical ML (LR + SVM + RF) | 330.36 |
+| CNN (Optimized) | 62.49 |
+| ResNet50 (Transfer Learning) | 260.1 |
+
+The runtime analysis demonstrates that high-dimensional flattened feature vectors significantly increased computational cost for classical ML models. 
+
+CNN exhibited efficient convergence due to structured convolution operations, while ResNet50 required higher processing time due t deep architecture complexity.
+
+All experiments were conducted on AMD Ryzen 5 (CPU), 16GB RAM environment.
+
+------------------------------------------------------------------------
 
 
 ## 🚀 How to Run
